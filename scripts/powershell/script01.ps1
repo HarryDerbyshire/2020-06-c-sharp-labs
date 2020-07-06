@@ -1,0 +1,1 @@
+echo "PowerShell Script" #Write-Output is the official way to do it
