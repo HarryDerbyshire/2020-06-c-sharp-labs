@@ -1,6 +1,6 @@
 function pushtogit {
     git add .
-    git commit -m "Updating GitHub"
+    git commit -m $args[0]
     git push
 }
 
