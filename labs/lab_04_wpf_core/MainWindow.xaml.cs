@@ -63,11 +63,16 @@ namespace lab_04_wpf_core
             } else if (Operator == "^")
             {
                 LabelDisplay.Content = "";
-                for (int i = 0; i <= Num2; i++)
+                int power = Num1;
+              
+                for (int i = 1; i < Num2; i++)
+
                 {
-                    Num1 *= Num1;
+                    Num1 *= power;
+                    Console.WriteLine(Num1);
                 }
-                    
+
+                LabelDisplay.Content = Num1;
             }
         }
 
@@ -80,9 +85,8 @@ namespace lab_04_wpf_core
         }
         private void ButtonEquals_Click(object sender, RoutedEventArgs e)
         {
-            SecondNum = int.Parse(string.Format("{0}", LabelDisplay.Content));
+            SecondNum = Convert.ToInt32(LabelDisplay.Content);
             Calculations(FirstNum, SecondNum, Operator);
-        
         }
 
         private void Button01_Click(object sender, RoutedEventArgs e)
@@ -99,7 +103,7 @@ namespace lab_04_wpf_core
         {
             LabelDisplay.Content += "3";
         }
-
+        
         private void Button04_Click(object sender, RoutedEventArgs e)
         {
             LabelDisplay.Content += "4";
@@ -109,7 +113,7 @@ namespace lab_04_wpf_core
         {
             LabelDisplay.Content += "5";
         }
-
+        
         private void Button06_Click(object sender, RoutedEventArgs e)
         {
             LabelDisplay.Content += "6";
@@ -134,7 +138,6 @@ namespace lab_04_wpf_core
         {
             LabelDisplay.Content += "0";
         }
-
 
         private void ButtonSubtraction_Click(object sender, RoutedEventArgs e)
         {
