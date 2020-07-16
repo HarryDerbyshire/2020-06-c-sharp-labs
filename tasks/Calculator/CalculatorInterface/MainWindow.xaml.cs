@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Calculator;
 
-namespace lab_04_wpf_core
+namespace CalculatorInterface
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,9 +23,7 @@ namespace lab_04_wpf_core
     {
         public MainWindow()
         {
-            //windows
             InitializeComponent();
-            LabelDisplay.Content = "";
         }
 
         static int FirstNum;
@@ -40,42 +39,46 @@ namespace lab_04_wpf_core
             else if (Operator == "+")
             {
                 LabelDisplay.Content = "";
-                LabelDisplay.Content = Num1 + Num2;
+                LabelDisplay.Content = Operations.Addition(Num1, Num2);
             }
             else if (Operator == "-")
             {
                 LabelDisplay.Content = "";
-                LabelDisplay.Content = Num1 - Num2;
-            } else if (Operator == "/")
+                LabelDisplay.Content = Operations.Subtraction(Num1, Num2);
+            }
+            else if (Operator == "/")
             {
                 if (Num2 == 0)
                 {
                     LabelDisplay.Content = "Divide Error";
-                } else
+                }
+                else
                 {
                     LabelDisplay.Content = "";
-                    LabelDisplay.Content = Num1 / Num2;
+                    LabelDisplay.Content = Operations.Division(Num1, Num2);
                 }
-            } else if (Operator == "*")
+            }
+            else if (Operator == "*")
             {
                 LabelDisplay.Content = "";
-                LabelDisplay.Content = Num1 * Num2;
-            } else if (Operator == "^")
+                LabelDisplay.Content =Operations.Multiplication(Num1, Num2);
+            }
+            else if (Operator == "%")
             {
-                LabelDisplay.Content = "";
-                int power = Num1;
-              
-                for (int i = 1; i < Num2; i++)
 
+                if (Num2 == 0)
                 {
-                    Num1 *= power;
-                    Console.WriteLine(Num1);
+                    LabelDisplay.Content = "Divide Error";
+                }
+                else
+                {
+                    LabelDisplay.Content = "";
+                    LabelDisplay.Content = Operations.Modulus(Num1, Num2);
                 }
 
-                LabelDisplay.Content = Num1;
             }
         }
-        
+
         private void ButtonAddition_Click(object sender, RoutedEventArgs e)
         {
             Operator = "+";
@@ -91,7 +94,6 @@ namespace lab_04_wpf_core
 
         private void Button01_Click(object sender, RoutedEventArgs e)
         {
-            
             LabelDisplay.Content += "1";
         }
 
@@ -104,7 +106,7 @@ namespace lab_04_wpf_core
         {
             LabelDisplay.Content += "3";
         }
-        
+
         private void Button04_Click(object sender, RoutedEventArgs e)
         {
             LabelDisplay.Content += "4";
@@ -114,7 +116,7 @@ namespace lab_04_wpf_core
         {
             LabelDisplay.Content += "5";
         }
-        
+
         private void Button06_Click(object sender, RoutedEventArgs e)
         {
             LabelDisplay.Content += "6";
@@ -166,22 +168,12 @@ namespace lab_04_wpf_core
             LabelDisplay.Content = "";
             Operator = "";
             FirstNum = 0;
-            SecondNum = 0;  
+            SecondNum = 0;
         }
 
-        private void ButtonTest_Click(object sender, RoutedEventArgs e)
+        private void ButtonModulus_Click(object sender, RoutedEventArgs e)
         {
-            //switch ()
-            //{
-            //    case "1":
-            //        LabelDisplay.Content += "1";
-            //        break;
-            //}
-        }
-
-        private void ButtonPower_Click(object sender, RoutedEventArgs e)
-        {
-            Operator = "^";
+            Operator = "%";
             FirstNum = Convert.ToInt32(LabelDisplay.Content);
             LabelDisplay.Content = "";
         }
