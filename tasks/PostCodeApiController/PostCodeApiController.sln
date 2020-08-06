@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostCodeApiController", "PostCodeApiController\PostCodeApiController.csproj", "{DEEAFEE1-138D-4739-8831-2D6EB4D54308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCodeApiView", "PostCodeApiView\PostCodeApiView.csproj", "{B105D8D7-58C7-44A9-BA8A-5BC5276AA7CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEEAFEE1-138D-4739-8831-2D6EB4D54308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEAFEE1-138D-4739-8831-2D6EB4D54308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEAFEE1-138D-4739-8831-2D6EB4D54308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEAFEE1-138D-4739-8831-2D6EB4D54308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B105D8D7-58C7-44A9-BA8A-5BC5276AA7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B105D8D7-58C7-44A9-BA8A-5BC5276AA7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B105D8D7-58C7-44A9-BA8A-5BC5276AA7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B105D8D7-58C7-44A9-BA8A-5BC5276AA7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {954683FE-0799-49AE-AE01-4A1AF621CB9D}
+	EndGlobalSection
+EndGlobal

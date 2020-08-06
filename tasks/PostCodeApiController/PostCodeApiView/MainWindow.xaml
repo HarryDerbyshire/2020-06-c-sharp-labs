@@ -1,0 +1,45 @@
+﻿<Window x:Class="PostCodeApiView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PostCodeApiView"
+        mc:Ignorable="d"
+        Title="PostCode Grabber" Height="306" Width="332" Background="#212121">
+ 
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="3" Background="#212121"></Label>
+        <Label Content="Postcode" Foreground="White" Grid.Row="1"></Label>
+        <TextBox x:Name="TextBoxPostcode" Foreground="White" Grid.Row="1" Grid.Column="1" Background="#424242"></TextBox>
+        <Button x:Name="ButtonFind" Content="Find" Grid.Row="1" Foreground="White" Background="#424242" Grid.Column="2" Click="ButtonFind_Click"></Button>
+        <Label Content="Country" Foreground="White" Grid.Row="2"></Label>
+            <Label x:Name="LabelCountry" Content="" Foreground="White" Grid.Row="2" Grid.Column="1"></Label>
+        <Label Content="District" Foreground="White" Grid.Row="3"></Label>
+            <Label x:Name="LabelDistrict" Content="" Foreground="White" Grid.Row="3" Grid.Column="1"></Label>
+        <Label Content="Ward" Foreground="White" Grid.Row="4"></Label>
+            <Label x:Name="LabelWard" Content="" Foreground="White" Grid.Row="4" Grid.Column="1"></Label>
+        <Label Content="NHS Region" Foreground="White" Grid.Row="5"></Label>
+            <Label x:Name="LabelNhsRegion" Content="" Foreground="White" Grid.Row="5" Grid.Column="1"></Label>
+        <Label Content="Constituency" Foreground="White" Grid.Row="6"></Label>
+            <Label x:Name="LabelConstituency" Content="" Foreground="White" Grid.Row="6" Grid.Column="1"></Label>
+        <Button x:Name="ButtonOpen" Content="Open in Maps" Foreground="White" Background="#424242" Width="100" HorizontalAlignment="Right"  Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="7" IsEnabled="False" Visibility="Hidden" Click="ButtonOpen_Click"></Button>
+    </Grid>
+</Window>
