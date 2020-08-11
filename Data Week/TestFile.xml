@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<university title = "XML Test Uni">
+    <lecturer>
+        <name>Harry Derbyshire</name>
+        <course>Computer Science</course>
+        <building>Block C</building>
+    </lecturer>
+    <lecturer>
+        <name>Joe Bloggs</name>
+        <course>Biology</course>
+        <building>Block E</building>
+    </lecturer>
+</university
+    

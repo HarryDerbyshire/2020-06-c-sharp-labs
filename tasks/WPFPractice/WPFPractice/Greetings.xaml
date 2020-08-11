@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<TextBox x:Name= "TextBox" HorizontalAlignment="Center" Height="24" Margin="288,102,258,295" TextWrapping="Wrap" Text="Is Engineering-66 the worst or best group" VerticalAlignment="Top" Width="248"/>
+		<RadioButton x:Name="worst" Content="They're the worst" HorizontalAlignment="Left" Margin="248,168,0,0" VerticalAlignment="Top"/>
+		<RadioButton x:Name="great" Content="They're Great" HorizontalAlignment="Left" Margin="473,171,0,0" VerticalAlignment="Top" IsChecked="True"/>
+		<Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Left" Margin="369,223,0,0" VerticalAlignment="Top" Width="75" Click="Confirm_Click"/>
+
+	</Grid>
+</Window>

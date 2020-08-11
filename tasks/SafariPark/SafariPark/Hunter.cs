@@ -5,13 +5,13 @@ using ClassApp;
 
 namespace SafariPark
 {
-    public class Hunter : Person
+    public class Hunter : Person, IShootable
     {
-        private string _camera;
+        public IShootable Shooter { get; set; }
 
-        public Hunter(string fName, string lName, string camera = "") : base(fName, lName)
+        public Hunter(string fName, string lName, IShootable aShooter) : base(fName, lName)
         {
-            _camera = camera;
+            Shooter = aShooter;
         }
         public Hunter()
         {
@@ -20,31 +20,31 @@ namespace SafariPark
         
         public string Shoot()
         {
-            return $"{GetFullName()} has taken a photo with their {_camera}";
+            return $"{GetFullName()}: {Shooter.Shoot()}";
         }
 
         public override string ToString()
         {
-            return $"{base.ToString()} Camera: {_camera}";
+            return $"{base.ToString()} Shooter: {Shooter}";
         }
 
     }
     public class MonsterHunter : Hunter
     {
-        private string _weapon;
-        public MonsterHunter(string fName, string lName, string camera, string weapon) : base(fName, lName)
+        
+        public MonsterHunter(string fName, string lName, string camera, IShootable aShooter) : base(fName, lName, aShooter)
         {
-            _weapon = weapon;
+            Shooter = aShooter;
         }
 
         public string Attack()
         {
-            return $"{GetFullName()} has attacked you with {_weapon}";
+            return $"{GetFullName()} has attacked you with {Shooter}";
         }
 
         public override string ToString()
         {
-            return $"{base.ToString()} Weapon: {_weapon}";
+            return $"{base.ToString()} Weapon: {Shooter}";
         }
     }
 

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="EntityFrameworkNorthwind.Orders">
+    <Position X="12.5" Y="3.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>GAEAAABAAAAIAAAAABAAICABCAAEAhBAAAAEAAACACA=</HashCode>
+      <FileName>Orders.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="OrderDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EntityFrameworkNorthwind.OrderDetails">
+    <Position X="18" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>MAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <FileName>OrderDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EntityFrameworkNorthwind.Employees">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgAEAAoAAAAGRIIAAAAAQAACIAAYACAIAAAAgCAAg=</HashCode>
+      <FileName>Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

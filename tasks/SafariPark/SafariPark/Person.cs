@@ -1,10 +1,11 @@
-﻿using System;
+﻿using SafariPark;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ClassApp
 {
-    public class Person
+    public class Person : IMovable
     {
         private string _firstName;
         private string _lastName;
@@ -36,6 +37,14 @@ namespace ClassApp
             return $"{base.ToString()} Name: {GetFullName()} Age: {Age}";
         }
 
+        public string Move()
+        {
+            return "Walking along";
+        }
 
+        public string Move(int times)
+        {
+            return $"Walking along {times} times";
+        }
     }
 }

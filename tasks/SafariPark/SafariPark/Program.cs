@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Reflection.Emit;
 using System.Xml.Serialization;
 
 namespace SafariPark
@@ -48,17 +49,72 @@ namespace SafariPark
             //    Console.WriteLine(item);
             //}
 
-            Airplane test = new Airplane(200, 150, "testAirline", 300) { NumPassengers = 200 };
-            test.Ascend(123);
-            Console.WriteLine(test.Move());
-            Console.WriteLine(test.Move(8));
-            Console.WriteLine(test);
+            //Airplane test = new Airplane(200, 150, "testAirline", 300) { NumPassengers = 200 };
+            //test.Ascend(123);
+            //Console.WriteLine(test.Move());
+            //Console.WriteLine(test.Move(8));
+            //Console.WriteLine(test);
+
+            //var gameObject = new List<Object>()
+            //{
+            //    new Person("Cathy", "French"),
+            //    new Airplane(400, 200, "EasyJet", 9000),
+            //    new Vehicle(12, 20),
+            //    new Hunter("Phil", "Anderson", "Canon")
+            //};
+
+            //foreach (var item in gameObject)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //    SpartaWrite(gameObject[3]);
+
+            //Person harry = new Person("Harry", "Derbyshire");
+
+            //harry.Move(4);
+
+            //var moveObjs = new List<IMovable>()
+            //{
+            //    new Person("Chen", "Shan"),
+            //    new Airplane(400, 200, "BrynAir", 9000),
+            //    new Vehicle(6, 10),
+            //    new Hunter("Dog", "Dundee", "Nikon")
+            //};
+
+            //Console.WriteLine();
+            //Console.WriteLine("Moving the objects:");
+            //foreach (var item in moveObjs)
+            //{
+            //    Console.WriteLine(item.Move(3));
+            //}
+            Weapon pistol = new WaterPistol("Supersoaker");
+            Hunter harry = new Hunter("Harry", "Derbyshire", pistol);
+            //Console.WriteLine(harry.ToString());
+            Console.WriteLine(harry.Shoot());
+            Weapon test = new LaserGun("Raygun");
+            harry.Shooter = test;
+            Console.WriteLine(harry.Shoot());
+            Console.WriteLine(harry.ToString());
+
+            Person tester = new Person("Test", "name") { Age = 13 };
+
         }
 
-        static void DemoMethod(Point3D pt, Person P)
-        {
-            pt.y = 1000;
-            P.Age = 92;
-        }
+        //public static void SpartaWrite(Object obj)
+        //{
+        //    Console.WriteLine(obj);
+        //    if (obj is Hunter)
+        //    {
+        //        var hunterObj = (Hunter)obj;
+        //        Console.WriteLine(hunterObj.Shoot());
+        //    }
+        //}
+
+        //static void DemoMethod(Point3D pt, Person P)
+        //{
+        //    pt.y = 1000;
+        //    P.Age = 92;
+        //}
     }
 }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFromScratch", "ApiFromScratch\ApiFromScratch.csproj", "{66BB3E74-4CD0-4E3A-8072-CF06781273E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFromScratch2", "ApiFromScratch2\ApiFromScratch2.csproj", "{C79BA746-FA76-4DBD-8101-C6801DA09E11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66BB3E74-4CD0-4E3A-8072-CF06781273E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BB3E74-4CD0-4E3A-8072-CF06781273E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BB3E74-4CD0-4E3A-8072-CF06781273E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BB3E74-4CD0-4E3A-8072-CF06781273E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79BA746-FA76-4DBD-8101-C6801DA09E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79BA746-FA76-4DBD-8101-C6801DA09E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79BA746-FA76-4DBD-8101-C6801DA09E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79BA746-FA76-4DBD-8101-C6801DA09E11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5F842AB-BB71-4A4A-879F-F93DEFD07851}
+	EndGlobalSection
+EndGlobal

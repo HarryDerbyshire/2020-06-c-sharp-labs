@@ -1,0 +1,32 @@
+﻿<Window x:Class="RadioGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioGUI"
+        mc:Ignorable="d"
+        Title="Radio" Height="219" Width="321">
+    <Grid Background="DarkGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="133*" />
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="116*"/>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="LabelChannel" Content = "0" FontWeight="Bold"
+               Grid.Row="0" Grid.Column="0"  VerticalContentAlignment="Center" Foreground="Black"  Margin="0,0,0,45"/>
+        <RadioButton x:Name="Channel1" GroupName="Channels" Content="Channel 1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" IsChecked="True" Checked="Channel1_Checked"/>
+        <RadioButton x:Name="Channel2" GroupName="Channels" Content="Channel 2" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="Channel2_Checked"/>
+        <RadioButton x:Name="Channel3" GroupName="Channels" Content="Channel 3" HorizontalAlignment="Left" Margin="10,48,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="Channel3_Checked"/>
+        <RadioButton x:Name="Channel4" GroupName="Channels" Content="Channel 4" HorizontalAlignment="Left" Margin="10,67,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="Channel4_Checked"/>
+        <RadioButton x:Name="TurnOn" GroupName="Power" Content="ON" Grid.Column="2" HorizontalAlignment="Left" Margin="31,22,0,0" VerticalAlignment="Top" Checked="TurnOn_Checked"/>
+        <RadioButton x:Name="TurnOff" GroupName="Power" Content="OFF" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="TurnOff_Checked" IsChecked="true" Margin="30,0,0,0"/>
+
+    </Grid>
+</Window>
